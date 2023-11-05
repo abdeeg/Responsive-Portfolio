@@ -2,26 +2,17 @@
   box-sizing: border-box;
 }
 
+:root {
+  --primary: black;
+  --secondary: grey;
+}
+
 body {
   margin: 0;
   padding: 0;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   line-height: 1.5;
 }
-
-.hero-banner {
-  background: white;
-  background: url(../images/02-hero-bg.jpg);
-}
-
-.Name {
-  color: aqua;
-  margin: 2000px;
-}
-
-.nav {}
-
-
 
 
 h1,
@@ -35,4 +26,46 @@ h6 {
 
 p {
   margin: 0;
+}
+
+header {
+  padding: 15px 15px 0;
+  padding-left: 40px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--secondary);
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+nav a {
+  padding: 20px;
+  color: var(--primary);
+  margin-right: 10px;
+  font-size: 20px;
+}
+
+.hero-banner {
+  background: url(../images/02-hero-bg.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 150px;
+
+
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  text-align: right;
+}
+
+.hero-banner h2 {
+  font-size: 50px;
+  color: black
 }
