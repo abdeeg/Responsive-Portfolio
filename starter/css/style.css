@@ -29,14 +29,14 @@ p {
 }
 
 header {
-  padding: 15px 15px 0;
-  padding-left: 40px;
+  padding: 15px 0 15px 0;
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
   justify-content: space-between;
+  flex-wrap: wrap;
   align-items: center;
   background-color: var(--secondary);
+  padding-left: 130px;
 }
 
 nav {
@@ -69,3 +69,177 @@ nav a {
   font-size: 50px;
   color: black
 }
+
+.page-wrapper {
+  max-width: 88%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.page-section {
+  margin: 25px 0;
+  padding: 10px 0;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: stretch;
+  justify-content: space-between;
+}
+
+.page-section>h2 {
+  text-align: right;
+  padding-right: 15px;
+  border-right: 4px solid var(--primary);
+  font-size: 3vw;
+  line-height: 1.1;
+  flex: 0 0 20%;
+}
+
+.page-section>div {
+  flex: 0 0 77%;
+}
+
+.page-section p {
+  margin-bottom: 20px;
+  margin-left: 20px;
+}
+
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.flex-item-calculator {
+  border: 5px solid var(--primary);
+  background-color: var(--secondary);
+  color: var(--primary);
+  min-height: 150px;
+  max-height: 150px;
+  flex-basis: calc(50% - 1em);
+  display: flex;
+  align-items: flex-end;
+  margin: 0.5em;
+  font-size: 1rem;
+  min-height: 400px;
+  flex-basis: 100%;
+  background-image: url(../images/02-portfolio-1.jpg);
+}
+
+.flex-item-calculator2 {
+  border: 5px solid var(--primary);
+  background-color: var(--secondary);
+  color: var(--primary);
+  min-height: 150px;
+  max-height: 150px;
+  flex-basis: calc(50% - 1em);
+  display: flex;
+  align-items: flex-end;
+  margin: 0.5em;
+  font-size: 1rem;
+  background-image: url(../images/02-portfolio-2.jpg);
+}
+
+.flex-item-calculator3 {
+  border: 5px solid var(--primary);
+  background-color: var(--secondary);
+  color: var(--primary);
+  min-height: 150px;
+  max-height: 150px;
+  flex-basis: calc(50% - 1em);
+  display: flex;
+  align-items: flex-end;
+  margin: 0.5em;
+  font-size: 1rem;
+  background-image: url(../images/02-portfolio-3.jpg);
+}
+
+.flex-item-calculator4 {
+  border: 5px solid var(--primary);
+  background-color: var(--secondary);
+  color: var(--primary);
+  min-height: 150px;
+  max-height: 150px;
+  flex-basis: calc(50% - 1em);
+  display: flex;
+  align-items: flex-end;
+  margin: 0.5em;
+  font-size: 1rem;
+  background-image: url(../images/02-portfolio-1.jpg);
+}
+
+.flex-item-calculator5 {
+  border: 5px solid var(--primary);
+  background-color: var(--secondary);
+  color: var(--primary);
+  min-height: 150px;
+  max-height: 150px;
+  flex-basis: calc(50% - 1em);
+  display: flex;
+  align-items: flex-end;
+  margin: 0.5em;
+  font-size: 1rem;
+  background-image: url(../images/02-run-buddy.jpg);
+  background-size: 700px;
+  background-repeat: no-repeat;
+}
+
+.contact address a {
+  color: var(--secondary);
+  padding: 5px;
+  font-style: normal;
+  margin: 1.2rem;
+}
+
+.contact address a:hover {
+  color: orangered;
+}
+
+@media screen and (max-width 1000px {
+    header {
+      padding: 0 0 10px 0;
+      justify-content: center;
+      text-align: center;
+    }
+
+    header h1 {
+      width: 100%;
+      padding: 5px;
+      margin-bottom: 10px;
+      font-size: 10vw;
+    }
+
+    header nav {
+      justify-content: center;
+    }
+
+    .page-section > h2 {
+      flex: 0 0 100%;
+    }
+
+    .page-section {
+      border-right: none;
+      border-bottom: 4px solid var(--primary);
+      margin-bottom: 20px;
+      padding-bottom: 10px;
+      text-align: left;
+      font-size: 7vw;
+    }
+
+  }
+
+  @media screen and (max-width: 768px) {
+    .flex-item {
+      flex-basis: 100%;
+    }
+
+    .hero-banner {
+      justify-content: center;
+    }
+
+    .contact address {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+  }
