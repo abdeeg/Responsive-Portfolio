@@ -35,3 +35,13 @@ Here I worked on:
 - Adding the Root at the top of my sheet to reference back my Primary, Secondary and Tertiary colours to be used across my page
 - 
 
+
+## Links
+
+Github Link 
+
+https://github.com/abdeeg/Responsive-Portfolio
+
+Deployed Link
+
+https://abdeeg.github.io/Responsive-Portfolio
