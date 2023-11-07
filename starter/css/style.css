@@ -1,22 +1,29 @@
+/* Universal box-sizing property to include borders in element dimensions */
 * {
   box-sizing: border-box;
 }
 
+/* Define global color variables for easy color management */
 :root {
   --primary: white;
+  /* Primary text color */
   --secondary: #3F704D;
+  /* Secondary background color */
   --tertiary: black;
+  /* Tertiary text color */
 }
 
+/* Style the body element */
 body {
   margin: 0;
   padding: 0;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   line-height: 1.5;
   background-color: var(--secondary);
+  /* Use the secondary background color */
 }
 
-
+/* Reset margins for heading elements (h1, h2, h3, h4, h5, h6) and paragraphs */
 h1,
 h2,
 h3,
@@ -30,6 +37,7 @@ p {
   margin: 0;
 }
 
+/* Style the header containing navigation */
 header {
   padding: 15px 0 15px 0;
   display: flex;
@@ -38,10 +46,13 @@ header {
   flex-wrap: wrap;
   align-items: center;
   color: var(--primary);
+  /* Text color using primary variable */
   background-color: var(--secondary);
+  /* Background color using secondary variable */
   padding-left: 130px;
 }
 
+/* Style the navigation links */
 nav {
   display: flex;
   flex-direction: row;
@@ -51,14 +62,17 @@ nav {
 nav a {
   padding: 20px;
   color: var(--primary);
+  /* Text color using primary variable */
   margin-right: 10px;
   font-size: 20px;
 }
 
 nav a:hover {
   color: aqua;
+  /* Change link color on hover */
 }
 
+/* Style the hero banner section */
 .hero-banner {
   background: url(../../images/giphy.gif);
   background-repeat: no-repeat;
@@ -71,18 +85,23 @@ nav a:hover {
   text-align: right;
 }
 
+/* Style the h2 element within the hero banner */
 .hero-banner h2 {
   font-size: 50px;
-  color: black
+  color: black;
+  /* Set font size and color */
 }
 
+/* Style the main page wrapper */
 .page-wrapper {
   max-width: 88%;
   margin-left: auto;
   margin-right: auto;
   background-color: var(--secondary);
+  /* Background color using secondary variable */
 }
 
+/* Style page sections */
 .page-section {
   margin: 25px 0;
   padding: 10px 0;
@@ -92,13 +111,17 @@ nav a:hover {
   align-items: stretch;
   justify-content: space-between;
   color: var(--primary);
+  /* Text color using primary variable */
   background-color: var(--secondary);
+  /* Background color using secondary variable */
 }
 
+/* Style the h2 element within page sections */
 .page-section>h2 {
   text-align: right;
   padding-right: 15px;
   border-right: 4px solid var(--primary);
+  /* Right border with primary color */
   font-size: 3vw;
   line-height: 1.1;
   flex: 0 0 20%;
@@ -113,12 +136,13 @@ nav a:hover {
   margin-left: 20px;
 }
 
+/* Style for flex containers */
 .flex-container {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
 }
 
+/* Style for flex items, e.g., .flex-item-refactor */
 .flex-item-refactor {
   border: 5px solid var(--primary);
   background-color: var(--secondary);
@@ -204,8 +228,10 @@ nav a:hover {
   padding-left: 5px;
 }
 
+/* Style contact information within the address tag */
 .contact address a {
   color: var(--primary);
+  /* Text color using primary variable */
   padding: 5px;
   font-style: normal;
   margin: 1.2rem;
@@ -213,8 +239,10 @@ nav a:hover {
 
 .contact address a:hover {
   color: aqua;
+  /* Change link color on hover */
 }
 
+/* Media query for screens with max-width: 1000px */
 @media screen and (max-width: 1000px) {
   header {
     padding: 0 0 10px 0;
@@ -227,6 +255,7 @@ nav a:hover {
     padding: 5px;
     margin-bottom: 10px;
     font-size: 1.5rem;
+    /* Adjust font size for smaller screens */
   }
 
   header nav {
@@ -243,27 +272,27 @@ nav a:hover {
     padding-bottom: 10px;
     text-align: left;
     font-size: 1.3rem;
+    /* Adjust font size for smaller screens */
   }
-
 }
 
+/* Media query for screens with max-width: 768px */
 @media screen and (max-width: 768px) {
 
   .page-section>h2 {
     font-size: 1.3rem;
     border-right: 0;
     border-bottom: 4px solid var(--primary);
+    /* Add a bottom border */
     text-align: left;
     margin-bottom: 20px;
     padding-bottom: 10px;
-
   }
 
   .page-section div p {
     font-size: 1rem;
     text-align: left;
     margin-left: 0;
-
   }
 
   .page-section {
@@ -285,11 +314,11 @@ nav a:hover {
 
   .flex-container {
     flex-direction: column;
-
   }
 
   .contact address a {
     font-size: 4vw;
+    /* Adjust font size for smaller screens */
     display: block;
     width: 100%;
     margin-left: 0;
