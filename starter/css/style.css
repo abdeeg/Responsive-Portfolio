@@ -3,8 +3,9 @@
 }
 
 :root {
-  --primary: black;
-  --secondary: grey;
+  --primary: white;
+  --secondary: #3F704D;
+  --tertiary: black;
 }
 
 body {
@@ -12,6 +13,7 @@ body {
   padding: 0;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   line-height: 1.5;
+  background-color: var(--secondary);
 }
 
 
@@ -35,6 +37,7 @@ header {
   justify-content: space-between;
   flex-wrap: wrap;
   align-items: center;
+  color: var(--primary);
   background-color: var(--secondary);
   padding-left: 130px;
 }
@@ -52,13 +55,16 @@ nav a {
   font-size: 20px;
 }
 
+nav a:hover {
+  color: aqua;
+}
+
 .hero-banner {
-  background: url(../images/02-hero-bg.jpg);
+  background: url(../../images/giphy.gif);
   background-repeat: no-repeat;
   background-position: center;
+  background-size: cover;
   padding: 150px;
-
-
   display: flex;
   justify-content: flex-end;
   align-items: flex-end;
@@ -74,6 +80,7 @@ nav a {
   max-width: 88%;
   margin-left: auto;
   margin-right: auto;
+  background-color: var(--secondary);
 }
 
 .page-section {
@@ -84,6 +91,8 @@ nav a {
   flex-wrap: wrap;
   align-items: stretch;
   justify-content: space-between;
+  color: var(--primary);
+  background-color: var(--secondary);
 }
 
 .page-section>h2 {
@@ -110,10 +119,10 @@ nav a {
   justify-content: center;
 }
 
-.flex-item-calculator {
+.flex-item-refactor {
   border: 5px solid var(--primary);
   background-color: var(--secondary);
-  color: var(--primary);
+  color: var(--tertiary);
   min-height: 150px;
   max-height: 150px;
   flex-basis: calc(50% - 1em);
@@ -123,13 +132,16 @@ nav a {
   font-size: 1rem;
   min-height: 400px;
   flex-basis: 100%;
-  background-image: url(../images/02-portfolio-1.jpg);
+  background-image: url(../images/Horiseon.jpg);
+  background-size: cover;
+  text-decoration: none;
+  padding-left: 5px;
 }
 
 .flex-item-calculator2 {
   border: 5px solid var(--primary);
   background-color: var(--secondary);
-  color: var(--primary);
+  color: var(--tertiary);
   min-height: 150px;
   max-height: 150px;
   flex-basis: calc(50% - 1em);
@@ -138,12 +150,14 @@ nav a {
   margin: 0.5em;
   font-size: 1rem;
   background-image: url(../images/02-portfolio-2.jpg);
+  text-decoration: none;
+  padding-left: 5px;
 }
 
 .flex-item-calculator3 {
   border: 5px solid var(--primary);
   background-color: var(--secondary);
-  color: var(--primary);
+  color: var(--tertiary);
   min-height: 150px;
   max-height: 150px;
   flex-basis: calc(50% - 1em);
@@ -152,12 +166,14 @@ nav a {
   margin: 0.5em;
   font-size: 1rem;
   background-image: url(../images/02-portfolio-3.jpg);
+  text-decoration: none;
+  padding-left: 5px;
 }
 
 .flex-item-calculator4 {
   border: 5px solid var(--primary);
   background-color: var(--secondary);
-  color: var(--primary);
+  color: var(--tertiary);
   min-height: 150px;
   max-height: 150px;
   flex-basis: calc(50% - 1em);
@@ -166,12 +182,14 @@ nav a {
   margin: 0.5em;
   font-size: 1rem;
   background-image: url(../images/02-portfolio-1.jpg);
+  text-decoration: none;
+  padding-left: 5px;
 }
 
 .flex-item-calculator5 {
   border: 5px solid var(--primary);
   background-color: var(--secondary);
-  color: var(--primary);
+  color: var(--tertiary);
   min-height: 150px;
   max-height: 150px;
   flex-basis: calc(50% - 1em);
@@ -182,64 +200,98 @@ nav a {
   background-image: url(../images/02-run-buddy.jpg);
   background-size: 700px;
   background-repeat: no-repeat;
+  text-decoration: none;
+  padding-left: 5px;
 }
 
 .contact address a {
-  color: var(--secondary);
+  color: var(--primary);
   padding: 5px;
   font-style: normal;
   margin: 1.2rem;
 }
 
 .contact address a:hover {
-  color: orangered;
+  color: aqua;
 }
 
-@media screen and (max-width 1000px {
-    header {
-      padding: 0 0 10px 0;
-      justify-content: center;
-      text-align: center;
-    }
+@media screen and (max-width: 1000px) {
+  header {
+    padding: 0 0 10px 0;
+    justify-content: center;
+    text-align: center;
+  }
 
-    header h1 {
-      width: 100%;
-      padding: 5px;
-      margin-bottom: 10px;
-      font-size: 10vw;
-    }
+  header h1 {
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 10px;
+    font-size: 1.5rem;
+  }
 
-    header nav {
-      justify-content: center;
-    }
+  header nav {
+    justify-content: center;
+  }
 
-    .page-section > h2 {
-      flex: 0 0 100%;
-    }
+  .page-section>h2 {
+    flex: 0 0 20%;
+  }
 
-    .page-section {
-      border-right: none;
-      border-bottom: 4px solid var(--primary);
-      margin-bottom: 20px;
-      padding-bottom: 10px;
-      text-align: left;
-      font-size: 7vw;
-    }
+  .page-section {
+    border-right: none;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    text-align: left;
+    font-size: 1.3rem;
+  }
+
+}
+
+@media screen and (max-width: 768px) {
+
+  .page-section>h2 {
+    font-size: 1.3rem;
+    border-right: 0;
+    border-bottom: 4px solid var(--primary);
+    text-align: left;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
 
   }
 
-  @media screen and (max-width: 768px) {
-    .flex-item {
-      flex-basis: 100%;
-    }
-
-    .hero-banner {
-      justify-content: center;
-    }
-
-    .contact address {
-      flex-direction: column;
-      align-items: flex-start;
-    }
+  .page-section div p {
+    font-size: 1rem;
+    text-align: left;
+    margin-left: 0;
 
   }
+
+  .page-section {
+    flex-direction: column;
+  }
+
+  .flex-item {
+    flex-basis: 100%;
+  }
+
+  .hero-banner {
+    justify-content: center;
+  }
+
+  .contact address {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .flex-container {
+    flex-direction: column;
+
+  }
+
+  .contact address a {
+    font-size: 4vw;
+    display: block;
+    width: 100%;
+    margin-left: 0;
+  }
+}
