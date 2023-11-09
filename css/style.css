@@ -67,9 +67,9 @@ nav a {
   font-size: 20px;
 }
 
+ /* Change link color on hover */
 nav a:hover {
   color: aqua;
-  /* Change link color on hover */
 }
 
 /* Style the hero banner section */
@@ -162,6 +162,12 @@ nav a:hover {
   padding-left: 5px;
 }
 
+.flex-item-refactor:hover {
+  transform: scale(1.05);
+color: black;
+border-color: aqua;
+}
+
 /* Styling for the small box in each Work project */
 .refactor {
 background-color: var(--tertiary);
@@ -187,6 +193,7 @@ margin-left: -9px;
   background-image: url(../images/02-portfolio-2.jpg);
   text-decoration: none;
   padding-left: 5px;
+  pointer-events: none;
 }
 
 .calculator {
@@ -213,6 +220,7 @@ margin-left: -9px;
   background-image: url(../images/02-portfolio-3.jpg);
   text-decoration: none;
   padding-left: 5px;
+  pointer-events: none;
 }
 
 .comingsoon {
@@ -239,6 +247,7 @@ margin-left: -9px;
   background-image: url(../images/02-portfolio-1.jpg);
   text-decoration: none;
   padding-left: 5px;
+  pointer-events: none;
 }
 
 .comingsoon2 {
@@ -267,6 +276,7 @@ margin-left: -9px;
   background-repeat: no-repeat;
   text-decoration: none;
   padding-left: 5px;
+  pointer-events: none;
 }
 
 .comingsoon3 {
