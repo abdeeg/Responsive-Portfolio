@@ -9,7 +9,7 @@
   /* Primary text color */
   --secondary: #3F704D;
   /* Secondary background color */
-  --tertiary: black;
+  --tertiary: #3A4C40;
   /* Tertiary text color */
 }
 
@@ -74,7 +74,7 @@ nav a:hover {
 
 /* Style the hero banner section */
 .hero-banner {
-  background: url(../../images/giphy.gif);
+  background: url(/images/giphy.gif);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -156,13 +156,24 @@ nav a:hover {
   font-size: 1rem;
   min-height: 400px;
   flex-basis: 100%;
-  background-image: url(../images/Horiseon.jpg);
+  background-image: url(/images/Horiseon.jpg);
   background-size: cover;
   text-decoration: none;
   padding-left: 5px;
 }
 
-.flex-item-calculator2 {
+/* Styling for the small box in each Work project */
+.refactor {
+background-color: var(--tertiary);
+color: var(--primary);
+border: 4px white solid;
+border-bottom: none;
+position: absolute;
+padding: 1rem;
+margin-left: -9px;
+}
+
+.flex-item-calculator {
   border: 5px solid var(--primary);
   background-color: var(--secondary);
   color: var(--tertiary);
@@ -173,12 +184,22 @@ nav a:hover {
   align-items: flex-end;
   margin: 0.5em;
   font-size: 1rem;
-  background-image: url(../images/02-portfolio-2.jpg);
+  background-image: url(/images/02-portfolio-2.jpg);
   text-decoration: none;
   padding-left: 5px;
 }
 
-.flex-item-calculator3 {
+.calculator {
+  background-color: var(--tertiary);
+  color: var(--primary);
+  border: 4px white solid;
+  border-bottom: none;
+  position: absolute;
+  padding: 1rem;
+  margin-left: -9px;
+  }
+
+.flex-item-comingsoon {
   border: 5px solid var(--primary);
   background-color: var(--secondary);
   color: var(--tertiary);
@@ -189,12 +210,22 @@ nav a:hover {
   align-items: flex-end;
   margin: 0.5em;
   font-size: 1rem;
-  background-image: url(../images/02-portfolio-3.jpg);
+  background-image: url(/images/02-portfolio-3.jpg);
   text-decoration: none;
   padding-left: 5px;
 }
 
-.flex-item-calculator4 {
+.comingsoon {
+  background-color: var(--tertiary);
+  color: var(--primary);
+  border: 4px white solid;
+  border-bottom: none;
+  position: absolute;
+  padding: 1rem;
+  margin-left: -9px;
+  }
+
+  .flex-item-comingsoon2 {
   border: 5px solid var(--primary);
   background-color: var(--secondary);
   color: var(--tertiary);
@@ -205,12 +236,22 @@ nav a:hover {
   align-items: flex-end;
   margin: 0.5em;
   font-size: 1rem;
-  background-image: url(../images/02-portfolio-1.jpg);
+  background-image: url(/images/02-portfolio-1.jpg);
   text-decoration: none;
   padding-left: 5px;
 }
 
-.flex-item-calculator5 {
+.comingsoon2 {
+  background-color: var(--tertiary);
+  color: var(--primary);
+  border: 4px white solid;
+  border-bottom: none;
+  position: absolute;
+  padding: 1rem;
+  margin-left: -9px;
+  }
+
+.flex-item-comingsoon3 {
   border: 5px solid var(--primary);
   background-color: var(--secondary);
   color: var(--tertiary);
@@ -221,12 +262,22 @@ nav a:hover {
   align-items: flex-end;
   margin: 0.5em;
   font-size: 1rem;
-  background-image: url(../images/02-run-buddy.jpg);
+  background-image: url(/images/02-run-buddy.jpg);
   background-size: 700px;
   background-repeat: no-repeat;
   text-decoration: none;
   padding-left: 5px;
 }
+
+.comingsoon3 {
+  background-color: var(--tertiary);
+  color: var(--primary);
+  border: 4px white solid;
+  border-bottom: none;
+  position: absolute;
+  padding: 1rem;
+  margin-left: -9px;
+  }
 
 /* Style contact information within the address tag */
 .contact address a {
@@ -242,42 +293,15 @@ nav a:hover {
   /* Change link color on hover */
 }
 
-/* Media query for screens with max-width: 1000px */
-@media screen and (max-width: 1000px) {
+
+/* Media query for screens with max-width: 768px */
+@media screen and (max-width: 768px) {
+
   header {
     padding: 0 0 10px 0;
     justify-content: center;
     text-align: center;
   }
-
-  header h1 {
-    width: 100%;
-    padding: 5px;
-    margin-bottom: 10px;
-    font-size: 1.5rem;
-    /* Adjust font size for smaller screens */
-  }
-
-  header nav {
-    justify-content: center;
-  }
-
-  .page-section>h2 {
-    flex: 0 0 20%;
-  }
-
-  .page-section {
-    border-right: none;
-    margin-bottom: 20px;
-    padding-bottom: 10px;
-    text-align: left;
-    font-size: 1.3rem;
-    /* Adjust font size for smaller screens */
-  }
-}
-
-/* Media query for screens with max-width: 768px */
-@media screen and (max-width: 768px) {
 
   .page-section>h2 {
     font-size: 1.3rem;
