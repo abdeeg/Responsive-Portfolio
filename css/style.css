@@ -74,7 +74,7 @@ nav a:hover {
 
 /* Style the hero banner section */
 .hero-banner {
-  background: url(/images/giphy.gif);
+  background: url(../images/giphy.gif);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -156,7 +156,7 @@ nav a:hover {
   font-size: 1rem;
   min-height: 400px;
   flex-basis: 100%;
-  background-image: url(/images/Horiseon.jpg);
+  background-image: url(../images/Horiseon.jpg);
   background-size: cover;
   text-decoration: none;
   padding-left: 5px;
@@ -184,7 +184,7 @@ margin-left: -9px;
   align-items: flex-end;
   margin: 0.5em;
   font-size: 1rem;
-  background-image: url(/images/02-portfolio-2.jpg);
+  background-image: url(../images/02-portfolio-2.jpg);
   text-decoration: none;
   padding-left: 5px;
 }
@@ -210,7 +210,7 @@ margin-left: -9px;
   align-items: flex-end;
   margin: 0.5em;
   font-size: 1rem;
-  background-image: url(/images/02-portfolio-3.jpg);
+  background-image: url(../images/02-portfolio-3.jpg);
   text-decoration: none;
   padding-left: 5px;
 }
@@ -236,7 +236,7 @@ margin-left: -9px;
   align-items: flex-end;
   margin: 0.5em;
   font-size: 1rem;
-  background-image: url(/images/02-portfolio-1.jpg);
+  background-image: url(../images/02-portfolio-1.jpg);
   text-decoration: none;
   padding-left: 5px;
 }
@@ -262,7 +262,7 @@ margin-left: -9px;
   align-items: flex-end;
   margin: 0.5em;
   font-size: 1rem;
-  background-image: url(/images/02-run-buddy.jpg);
+  background-image: url(../images/02-run-buddy.jpg);
   background-size: 700px;
   background-repeat: no-repeat;
   text-decoration: none;
